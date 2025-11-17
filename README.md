@@ -1,5 +1,5 @@
 # University Database Project  
-CS 3220 / Database Systems — Group Project  
+CS 4222 / PRINCIPLES OF DATABASE SYSTEMS — Group Project  
 Fall 2025 — Cal State LA
 
 ## Overview
