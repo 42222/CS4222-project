@@ -1,0 +1,8 @@
+# Group Member Contributions
+
+TODO: Fill in each team member's name, CIN, tasks completed, and contribution percentage.
+
+Example:
+- Alice — CIN: xxx — Created ER diagram, SQL schema — 33%
+- Bob   — CIN: xxx — Java JDBC application — 33%
+- Carol — CIN: xxx — Procedures + triggers + report — 34%
