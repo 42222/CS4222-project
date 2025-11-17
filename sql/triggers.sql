@@ -1,0 +1,34 @@
+-- Triggers for CS4222 University Database Project
+-- TODO: Add actual PL/pgSQL trigger functions and trigger definitions.
+
+---------------------------------------------------------------
+-- faculty_restrict:
+--  Ensure that each project has at most 4 faculty members as CO-PI.
+--
+-- Example structure:
+-- CREATE OR REPLACE FUNCTION check_faculty_restrict()
+-- RETURNS TRIGGER AS $$
+-- BEGIN
+--     -- Implementation goes here
+-- END;
+-- $$ LANGUAGE plpgsql;
+--
+-- CREATE TRIGGER faculty_restrict
+-- BEFORE INSERT OR UPDATE ON ProjectFaculty
+-- FOR EACH ROW EXECUTE FUNCTION check_faculty_restrict();
+
+---------------------------------------------------------------
+-- student_restrict:
+--  Ensure that each student works on no more than two projects.
+--
+-- Example structure:
+-- CREATE OR REPLACE FUNCTION check_student_restrict()
+-- RETURNS TRIGGER AS $$
+-- BEGIN
+--     -- Implementation goes here
+-- END;
+-- $$ LANGUAGE plpgsql;
+--
+-- CREATE TRIGGER student_restrict
+-- BEFORE INSERT OR UPDATE ON ProjectStudent
+-- FOR EACH ROW EXECUTE FUNCTION check_student_restrict();
