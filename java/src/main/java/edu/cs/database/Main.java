@@ -19,16 +19,19 @@ public class Main {
                 System.out.println("\n===== UNIVERSITY DB MENU =====");
                 System.out.println("1. Add Project");
                 System.out.println("2. Remove Project");
+                System.out.println("3. Show Student Info");
                 System.out.println("0. Exit");
                 System.out.print("Choose an option: ");
 
                 int choice = sc.nextInt();
-                sc.nextLine(); 
+                sc.nextLine();  // consume newline
+
                 if (choice == 0) {
                     System.out.println("Goodbye!");
                     break;
                 }
 
+                // ============= OPTION 1: ADD PROJECT =============
                 if (choice == 1) {
                     System.out.print("Enter Project Number: ");
                     int pnum = sc.nextInt();
@@ -51,17 +54,34 @@ public class Main {
                     String pi = sc.nextLine();
 
                     ProjectDAO.addProject(
-                            pnum, sponsor,
+                            pnum,
+                            sponsor,
                             Date.valueOf(sdate),
                             Date.valueOf(edate),
-                            budget, pi
+                            budget,
+                            pi
                     );
                 }
 
+                // ============= OPTION 2: REMOVE PROJECT =============
                 else if (choice == 2) {
                     System.out.print("Enter Project Number to delete: ");
                     int pnum = sc.nextInt();
+                    sc.nextLine();
                     ProjectDAO.removeProject(pnum);
+                }
+
+                // ============= OPTION 3: SHOW STUDENT INFO =============
+                else if (choice == 3) {
+                    System.out.print("Enter Student SSN: ");
+                    String ssn = sc.nextLine();
+
+                    StudentDAO.showStudentInfo(ssn);
+                }
+
+                // ============= INVALID OPTION =============
+                else {
+                    System.out.println("Invalid option.");
                 }
             }
 
