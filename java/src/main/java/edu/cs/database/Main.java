@@ -4,12 +4,13 @@ import java.sql.Connection;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("University DB Project - JDBC Client Started");
+
+        System.out.println("Trying to connect…");
 
         try (Connection conn = DBConnection.getConnection()) {
             System.out.println("Connected to cs1.calstatela.edu successfully!");
         } catch (Exception e) {
-            System.out.println("Failed to connect to database:");
+            System.out.println("Failed to connect:");
             e.printStackTrace();
         }
     }
