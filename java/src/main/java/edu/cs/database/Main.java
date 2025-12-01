@@ -20,6 +20,7 @@ public class Main {
                 System.out.println("1. Add Project");
                 System.out.println("2. Remove Project");
                 System.out.println("3. Show Student Info");
+                System.out.println("4. Show Faculty Projects");
                 System.out.println("0. Exit");
                 System.out.print("Choose an option: ");
 
@@ -31,7 +32,7 @@ public class Main {
                     break;
                 }
 
-                // ============= OPTION 1: ADD PROJECT =============
+                // 1. Add Project
                 if (choice == 1) {
                     System.out.print("Enter Project Number: ");
                     int pnum = sc.nextInt();
@@ -54,16 +55,14 @@ public class Main {
                     String pi = sc.nextLine();
 
                     ProjectDAO.addProject(
-                            pnum,
-                            sponsor,
+                            pnum, sponsor,
                             Date.valueOf(sdate),
                             Date.valueOf(edate),
-                            budget,
-                            pi
+                            budget, pi
                     );
                 }
 
-                // ============= OPTION 2: REMOVE PROJECT =============
+                // 2. Remove Project
                 else if (choice == 2) {
                     System.out.print("Enter Project Number to delete: ");
                     int pnum = sc.nextInt();
@@ -71,15 +70,20 @@ public class Main {
                     ProjectDAO.removeProject(pnum);
                 }
 
-                // ============= OPTION 3: SHOW STUDENT INFO =============
+                // 3. Show Student Info
                 else if (choice == 3) {
                     System.out.print("Enter Student SSN: ");
                     String ssn = sc.nextLine();
-
                     StudentDAO.showStudentInfo(ssn);
                 }
 
-                // ============= INVALID OPTION =============
+                // 4. Show Faculty Projects
+                else if (choice == 4) {
+                    System.out.print("Enter Professor SSN: ");
+                    String profSsn = sc.nextLine();
+                    ProfessorDAO.showFacultyProjects(profSsn);
+                }
+
                 else {
                     System.out.println("Invalid option.");
                 }
