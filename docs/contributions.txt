@@ -1,8 +1,20 @@
 # Group Member Contributions
 
-TODO: Fill in each team member's name, CIN, tasks completed, and contribution percentage.
+Haonan Ma 
+- Implemented all Java JDBC client functionality  
+- Completed DBConnection, Main menu, ProjectDAO, StudentDAO  
+- Performed full integration testing with cs1.calstatela.edu  
+- Generated SQL testing screenshots, debugging connection issues  
+Contribution: 40%
 
-Example:
-- Alice — CIN: xxx — Created ER diagram, SQL schema — 33%
-- Bob   — CIN: xxx — Java JDBC application — 33%
-- Carol — CIN: xxx — Procedures + triggers + report — 34%
+Athena Ruiz 
+- Designed ER diagram (entities, relationships, constraints)  
+- Helped create SQL schema tables (department, professor, student, project)  
+- Prepared written documentation for ER assumptions & schema mapping  
+Contribution: 30%
+
+Washika Afrozi 
+- Implemented stored procedures and triggers  
+- Prepared SQL test cases for trigger validation  
+- Assisted in preparing report sections (Part III & overall formatting)  
+Contribution: 30%
