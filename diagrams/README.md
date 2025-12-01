@@ -1,5 +1,5 @@
 # Diagrams Folder
 
-Place ER diagram and schema diagram files here.
+Place ER diagram files here.
 
 - ER-diagram.png
