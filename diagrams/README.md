@@ -3,4 +3,3 @@
 Place ER diagram and schema diagram files here.
 
 - ER-diagram.png
-- schema-diagram.pdf
