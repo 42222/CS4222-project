@@ -6,11 +6,15 @@ import java.sql.DriverManager;
 public class DBConnection {
 
     private static final String URL  =
-        "jdbc:postgresql://cs1.calstatela.edu:5432/hp422212f2516p";
+            "jdbc:postgresql://cs1.calstatela.edu:5432/hp422212f2516p";
     private static final String USER = "hp422212f2516p";
-    private static final String PASS = "K0Wp4oaqmJbb";   
+    private static final String PASS = "K0Wp4oaqmJbb";
+
+    public DBConnection() {
+    }
 
     public static Connection getConnection() throws Exception {
+        Class.forName("org.postgresql.Driver");
         return DriverManager.getConnection(URL, USER, PASS);
     }
 }
