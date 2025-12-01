@@ -5,10 +5,10 @@ import java.sql.DriverManager;
 
 public class DBConnection {
 
-    private static final String URL =
-        "jdbc:postgresql://cs1.calstatela.edu:5432/YOUR_DB_NAME";
-    private static final String USER = "YOUR_USERNAME";
-    private static final String PASS = "YOUR_PASSWORD";
+    private static final String URL  =
+        "jdbc:postgresql://cs1.calstatela.edu:5432/hp422212f2516p";
+    private static final String USER = "hp422212f2516p";
+    private static final String PASS = "K0Wp4oaqmJbb";   
 
     public static Connection getConnection() throws Exception {
         return DriverManager.getConnection(URL, USER, PASS);
